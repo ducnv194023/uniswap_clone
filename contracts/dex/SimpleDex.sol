@@ -1,5 +1,6 @@
 pragma solidity ^0.8.19;
 
+import "hardhat/console.sol";
 import "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "./LiquidityToken.sol";
 
@@ -108,7 +109,9 @@ contract SimpleDex {
             revert("failed");
         }
 
+
         IERC20(token0).transferFrom(msg.sender, lptoken, amount0);
+
         IERC20(token1).transferFrom(msg.sender, lptoken, amount1);
     }
 

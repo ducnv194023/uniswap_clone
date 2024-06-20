@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/gigabyte/training_myself_solidity/contracts/Lock.sol": {
+    "/home/gigabyte/uniswap_clone/contracts/Lock.sol": {
       "lastModificationDate": 1718094014700,
       "contentHash": "dacf0d5cb5b45dc83086de5bc1c26c2c",
       "sourceName": "contracts/Lock.sol",
@@ -37,7 +37,7 @@
         "Lock"
       ]
     },
-    "/home/gigabyte/training_myself_solidity/contracts/dex/LiquidityToken.sol": {
+    "/home/gigabyte/uniswap_clone/contracts/dex/LiquidityToken.sol": {
       "lastModificationDate": 1718253321283,
       "contentHash": "64177741891eb47aee6331ef6602eb16",
       "sourceName": "contracts/dex/LiquidityToken.sol",
@@ -76,8 +76,8 @@
         "LiquidityToken"
       ]
     },
-    "/home/gigabyte/training_myself_solidity/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-      "lastModificationDate": 1718094721156,
+    "/home/gigabyte/uniswap_clone/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1718878932144,
       "contentHash": "c6375ef25e84c90b3d15f9ec4eef218f",
       "sourceName": "node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
@@ -117,8 +117,8 @@
         "ERC20"
       ]
     },
-    "/home/gigabyte/training_myself_solidity/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1718094721168,
+    "/home/gigabyte/uniswap_clone/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1718878932144,
       "contentHash": "5517c8678c18eb1a8ba58810e7ca39ca",
       "sourceName": "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
@@ -153,8 +153,8 @@
         "IERC20"
       ]
     },
-    "/home/gigabyte/training_myself_solidity/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1718094721152,
+    "/home/gigabyte/uniswap_clone/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1718878932144,
       "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
       "sourceName": "node_modules/@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -189,8 +189,8 @@
         "Context"
       ]
     },
-    "/home/gigabyte/training_myself_solidity/node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
-      "lastModificationDate": 1718094721152,
+    "/home/gigabyte/uniswap_clone/node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
+      "lastModificationDate": 1718878932144,
       "contentHash": "4aefc698f77ecbace7f401257dfe182d",
       "sourceName": "node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
       "solcConfig": {
@@ -227,8 +227,8 @@
         "IERC721Errors"
       ]
     },
-    "/home/gigabyte/training_myself_solidity/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
-      "lastModificationDate": 1718094721168,
+    "/home/gigabyte/uniswap_clone/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1718878932144,
       "contentHash": "4c02fa6f7ae7b6c289cef80424f0c875",
       "sourceName": "node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
@@ -265,9 +265,9 @@
         "IERC20Metadata"
       ]
     },
-    "/home/gigabyte/training_myself_solidity/contracts/dex/SimpleDex.sol": {
-      "lastModificationDate": 1718253572237,
-      "contentHash": "05de46aba9fd0189ceb6ce3753c60189",
+    "/home/gigabyte/uniswap_clone/contracts/dex/SimpleDex.sol": {
+      "lastModificationDate": 1718882359080,
+      "contentHash": "dbbe37607089359c459199ab849c6fed",
       "sourceName": "contracts/dex/SimpleDex.sol",
       "solcConfig": {
         "version": "0.8.24",
@@ -294,6 +294,7 @@
         }
       },
       "imports": [
+        "hardhat/console.sol",
         "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
         "./LiquidityToken.sol"
       ],
@@ -304,8 +305,8 @@
         "SimpleDex"
       ]
     },
-    "/home/gigabyte/training_myself_solidity/contracts/dex/MockERC20.sol": {
-      "lastModificationDate": 1718253334303,
+    "/home/gigabyte/uniswap_clone/contracts/dex/MockERC20.sol": {
+      "lastModificationDate": 1718858135827,
       "contentHash": "c1168aeb6f9bfbe0c104021290c9a250",
       "sourceName": "contracts/dex/MockERC20.sol",
       "solcConfig": {
@@ -340,6 +341,42 @@
       ],
       "artifacts": [
         "MockERC20"
+      ]
+    },
+    "/home/gigabyte/uniswap_clone/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1718878852340,
+      "contentHash": "896f68942c3a20e9ae3c3c5bfd3add54",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
       ]
     }
   }

@@ -3,12 +3,10 @@ async function main() {
   
     console.log("Deploying contracts with the account:", deployer.address);
   
-    const Mock = await ethers.getContractFactory("MockERC20");
-    const mock = await Mock.deploy("Hieu", "HIEU");
-    console.log(mock)
-    console.log('mock')
-
-    console.log("Mock deployed to:", mock.target);
+    const SimpleDex = await ethers.getContractFactory("SimpleDex");
+    const simpleDex = await SimpleDex.deploy();
+  
+    console.log("SimpleDex deployed to:", simpleDex.address);
   }
   
   main()
